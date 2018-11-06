@@ -1,0 +1,25 @@
+{
+    "name": "mavl-highlighting",
+    "displayName": "mavl-highlighting",
+    "description": "Syntax Highlighting for MAVL",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mavl",
+            "aliases": ["MAVL", "mavl"],
+            "extensions": [".mavl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mavl",
+            "scopeName": "source.mavl",
+            "path": "./syntaxes/mavl.tmLanguage.json"
+        }]
+    }
+}
