@@ -7,14 +7,32 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#operators"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.mavl",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.mavl",
+					"match": "\\b(if|else|while|for|foreach|return|switch|case|default|val|var|function)\\b"
+				},
+				{
+					"name": "keyword.other.mavl",
+					"match": "(\\brecord\\b|@)"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.mavl",
@@ -24,6 +42,55 @@
 				{
 					"name": "constant.character.escape.mavl",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.mavl",
+					"match": "//.*"
+				},
+				{
+					"name": "comment.block.mavl",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.mavl",
+					"match": "\\b(int|float|bool|void|string|vector|matrix)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.mavl",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "constant.numeric.mavl",
+					"match": "\\b(0|[1-9]\\d*)(\\.[0-9]+)?\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.mavl",
+					"match": "\\^|-|\\+|\\*|/|!|&|\\||>|>=|<|<=|==|!=|\\?"
+				},
+				{
+					"name": "keyword.operator.matrix.mavl",
+					"match": "\\.\\*|#|\\.dimension|\\.xDimension|\\.yDimension"
+				},
+				{
+					"name": "keyword.operator.assignment.mavl",
+					"match": "="
 				}
 			]
 		}

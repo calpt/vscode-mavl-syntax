@@ -1,8 +1,9 @@
 {
-    "name": "mavl-highlighting",
-    "displayName": "mavl-highlighting",
+    "name": "mavl-syntax",
+    "displayName": "mavl-syntax",
     "description": "Syntax Highlighting for MAVL",
     "version": "0.0.1",
+    "publisher": "cfalxp",
     "engines": {
         "vscode": "^1.28.0"
     },

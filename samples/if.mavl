@@ -1,0 +1,7 @@
+function void main(){
+	val bool a = true;
+	if(a){
+		/* Prints a string */
+		printString("foo");
+	}
+}

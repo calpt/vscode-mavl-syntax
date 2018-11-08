@@ -1,0 +1,11 @@
+record myRecord { 
+    var float r;
+    var matrix<int>[2][2] M;
+    val int i;
+}
+
+function void main() {
+    var myRecord x;
+    x = @myRecord[1.0, [[1, 2], [3, 4]], 10];
+    x@r = 3.141;
+}

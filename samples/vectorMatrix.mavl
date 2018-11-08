@@ -1,0 +1,6 @@
+function void main(){
+	val matrix<int>[3][3] A = B{-1:2:1}{-1:4:1};
+	var vector<int> [3] vec1;
+	vec1 = [1,2,3];
+	vec1[0] = 7;
+}
