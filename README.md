@@ -4,7 +4,7 @@ Basic syntax highlighting for the MAVL educational language in Visual Studio Cod
 
 ## Usage
 
-Copy this folder to your `%USERPROFILE%\.vscode\extensions` folder and restart VS Code.
+Copy this folder to your `%USERPROFILE%\.vscode\extensions` (on Windows) or `~/.vscode/extensions` (on Linux/ Mac) folder and restart VS Code.
 
 ## Release Notes
 
