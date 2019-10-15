@@ -82,11 +82,12 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.mavl",
-					"match": "\\^|-|\\+|\\*|/|!|&|\\||>|>=|<|<=|==|!=|\\?"
+					"match": "\\^|-|\\+|\\*|/|~|!|&|\\||>|>=|<|<=|==|!=|\\?"
 				},
 				{
-					"name": "keyword.operator.matrix.mavl",
-					"match": "\\.\\*|#|\\.dimension|\\.xDimension|\\.yDimension"
+					"name": "keyword.other.mavl",
+					"match": "\\.\\*|#|\\.dimension|\\.rows|\\.cols",
+					"_doc_": "technically an operator, but should be hightlighted as language keywords"
 				},
 				{
 					"name": "keyword.operator.assignment.mavl",

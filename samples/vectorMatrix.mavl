@@ -3,4 +3,6 @@ function void main(){
 	var vector<int> [3] vec1;
 	vec1 = [1,2,3];
 	vec1[0] = 7;
+	val int x = vec1.dimension;
+	val int s = A.rows + A.cols;
 }
